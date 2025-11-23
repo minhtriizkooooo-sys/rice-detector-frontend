@@ -4,7 +4,7 @@
   "private": true,
   
   // DÒNG BẠN CẦN THÊM VÀO ĐÂY
-  "homepage": "[https://minhtriizkooooo-sys.github.io/rice-detector-frontend/](https://minhtriizkooooo-sys.github.io/rice-detector-frontend/)", 
+ "homepage": "https://minhtriizkooooo-sys.github.io/rice-detector-frontend/",
 
   "dependencies": {
     //... các dependencies khác
