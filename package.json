@@ -1,0 +1,19 @@
+{
+  "name": "rice-detector-frontend",
+  "version": "0.1.0",
+  "private": true,
+  
+  // DÒNG BẠN CẦN THÊM VÀO ĐÂY
+  "homepage": "[https://minhtriizkooooo-sys.github.io/rice-detector-frontend/](https://minhtriizkooooo-sys.github.io/rice-detector-frontend/)", 
+
+  "dependencies": {
+    //... các dependencies khác
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  //...
+}
