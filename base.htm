@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Disease Detection</title>
+      <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@1,400&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <style>
+        /* Định nghĩa lớp font hỗ trợ tiếng Việt */
+        .font-viet-serif {
+            font-family: 'EB Garamond', Georgia, serif; /* Đã chuyển sang EB Garamond */
+        }
+        /* Đã tăng kích thước LOGO FOOTER lên 64px (tương đương h-16) để cân đối hơn */
+        .custom-logo {
+            height: 64px !important; 
+        }
+                @keyframes fade-in-up {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fade-in-up 0.5s ease-out forwards;
+        }
+    </style>
+    </head>
+<body class="bg-green-50 min-h-screen flex flex-col font-sans">
+    
+    <header class="bg-green-700 text-white py-4 shadow-lg z-50">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-2 sm:gap-4 text-center sm:text-left">
+                
+                <img 
+                    src="/static/Rice-Sense.png" 
+                    alt="Logo Rice Sense" 
+                    class="h-28 w-auto bg-white p-3 rounded-full shadow-md"
+                >
+                <div class="mt-2 sm:mt-0">
+                    <h1 class="text-2xl sm:text-3xl font-bold tracking-wide uppercase">Rice Sense – Nền tảng AI chẩn đoán bệnh lúa cho nông nghiệp số</h1>
+                    <p class="text-xs text-green-200 hidden sm:block">Hệ thống nhận diện bệnh lúa thông minh</p>
+                </div>
+            </div>
+                        {% block header_action %}
+            <a href="/" class="text-white hover:text-yellow-300 transition text-2xl">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            {% endblock %}
+        </div>
+    </header>
+    
+    <main class="flex-grow flex flex-col relative">
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <footer class="bg-green-800 text-white text-center py-6 text-sm leading-relaxed border-t-4 border-yellow-400 z-50">
+        <div class="container mx-auto px-4">
+            
+            <p class="font-bold text-lg mb-1 text-yellow-300 uppercase">CÔNG TY TNHH NÔNG TRÍ VIỆT</p>
+            
+            <p class="italic text-lg mb-4 text-blue-300 font-viet-serif font-thin">“Nâng tầm nông nghiệp bằng công nghệ”</p>
+            
+            <div class="flex flex-col items-center sm:flex-row sm:justify-center sm:items-center">
+                                
+                <div class="space-y-2 mb-4 sm:mb-0 text-center text-xs sm:text-sm sm:pr-4"> 
+                                         
+                    <p class="mb-0"><i class="fa-solid fa-location-dot mr-2"></i>159 Nam Kỳ Khởi Nghĩa, Phường Xuân Hòa, TP. Hồ Chí Minh</p>
+                                        
+                    <p class="sm:mb-0">
+                        <i class="fa-solid fa-user-tie mr-2"></i>Lại Nguyễn Minh Trí – 
+                        <a href="mailto:laingminhtri@gmail.com" class="underline hover:text-yellow-300 font-medium transition">
+                            laingminhtri@gmail.com
+                        </a>
+                        <span class="mx-2">|</span> 
+                        <span class="inline-flex items-center whitespace-nowrap">
+                            <i class="fa-solid fa-phone-volume mr-2"></i>
+                            <a href="tel:008083566" class="underline hover:text-yellow-300 font-medium transition">
+                                090 808 3566
+                            </a>
+                        </span>
+                    </p>
+                </div>
+                                
+                <div class="self-center sm:ml-4"> 
+                     <img src="/static/Logo_Marie_Curie.png" alt="Logo Marie Curie" class="w-auto bg-white rounded-full p-1 shadow-sm custom-logo">
+                </div>
+                            
+            </div>
+            
+            <p class="mt-4 pt-4 border-t border-green-600 text-xs text-green-300">
+                &copy;2025 Bản quyền thuộc Công ty TNHH Nông Trí Việt
+            </p>
+                    
+        </div>
+    </footer>
+
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+</body>
+</html>
